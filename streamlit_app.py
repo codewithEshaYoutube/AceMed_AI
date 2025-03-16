@@ -16,7 +16,7 @@ conn.commit()
 
 # App title and description
 st.title("🩺 AceMed AI - MDCAT LMS Dashboard")
-st.sidebar.image("Assets/Images/AceMed AI logo.jpg", caption="AceMed AI Logo", use_container_width=True)
+st.sidebar.image("Assets/Images/AceMed AI logo.jpg", caption="AceMed AI Logo",width=150, use_container_width=True)
 
 st.sidebar.header("Dashboard Navigation")
 page = st.sidebar.radio("Select a page", ["📚 Study Materials", "💬 MDCAT Chatbot", "📊 Performance Tracker"])
