@@ -1,6 +1,6 @@
 # AceMed AI
 <div style="display: flex; justify-content: center;">
-  <img src="Assets/Images/AceMed AI logo.jpg" width="300" alt="AceMed AI Logo"/>
+  <img src="Assets/Images/AceMed AI logo.jpg" width="200" alt="AceMed AI Logo"/>
 </div>
 
 
