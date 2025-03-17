@@ -1,45 +1,66 @@
 import streamlit as st
 from openai import OpenAI
+import sqlite3
 
-# Show title and description.
-st.title("💬 Chatbot")
-st.write(
-    "This is a simple chatbot that uses OpenAI's GPT-3.5 model to generate responses. "
-    "To use this app, you need to provide an OpenAI API key, which you can get [here](https://platform.openai.com/account/api-keys). "
-    "You can also learn how to build this app step by step by [following our tutorial](https://docs.streamlit.io/develop/tutorials/llms/build-conversational-apps)."
-)
+# Database setup
+conn = sqlite3.connect("users.db")
+cursor = conn.cursor()
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        username TEXT UNIQUE,
+        password TEXT
+    )
+""")
+conn.commit()
 
-# Ask user for their OpenAI API key via `st.text_input`.
-# Alternatively, you can store the API key in `./.streamlit/secrets.toml` and access it
-# via `st.secrets`, see https://docs.streamlit.io/develop/concepts/connections/secrets-management
-openai_api_key = st.text_input("OpenAI API Key", type="password")
-if not openai_api_key:
-    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
-else:
+# App title and description
+st.title("🩺 AceMed AI - MDCAT LMS Dashboard")
+st.sidebar.image("Assets/Images/AceMed AI logo.jpg", caption="AceMed AI Logo",width=150, use_container_width=True)
 
-    # Create an OpenAI client.
+st.sidebar.header("Dashboard Navigation")
+page = st.sidebar.radio("Select a page", ["📚 Study Materials", "💬 MDCAT Chatbot", "📊 Performance Tracker"])
+
+if page == "📚 Study Materials":
+    st.subheader("📖 Study Materials")
+    st.write("Access MDCAT subject-wise notes, past papers, and video lectures.")
+    st.write("- **Biology**: Human Physiology, Genetics, Ecology")
+    st.write("- **Chemistry**: Organic Chemistry, Periodic Table, Chemical Bonding")
+    st.write("- **Physics**: Kinematics, Dynamics, Thermodynamics")
+    st.write("- **English**: Grammar, Vocabulary, Comprehension")
+
+elif page == "📊 Performance Tracker":
+    st.subheader("📈 Performance Tracker")
+    st.write("Track your MDCAT practice test scores and improvements over time.")
+    st.line_chart([70, 75, 80, 85, 90, 95])
+
+elif page == "💬 MDCAT Chatbot":
+    st.subheader("💬 MDCAT AI Chatbot")
+    st.write("AceMed AI is designed to assist MDCAT students with subject-related queries and explanations.")
+
+    # Use dummy key for now
+    openai_api_key = "1e7d1c3888be4ecc9d5e2b98981edc74"  # Dummy API Key
+    
+    # Create OpenAI client
     client = OpenAI(api_key=openai_api_key)
 
-    # Create a session state variable to store the chat messages. This ensures that the
-    # messages persist across reruns.
+    # Initialize session state for storing messages
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
-    # Display the existing chat messages via `st.chat_message`.
+    # Display chat history
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    # Create a chat input field to allow the user to enter a message. This will display
-    # automatically at the bottom of the page.
-    if prompt := st.chat_input("What is up?"):
-
-        # Store and display the current prompt.
+    # User input field
+    if prompt := st.chat_input("Ask a question about MDCAT subjects..."):
+        # Store and display user query
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
 
-        # Generate a response using the OpenAI API.
+        # Generate AI response
         stream = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
@@ -49,8 +70,7 @@ else:
             stream=True,
         )
 
-        # Stream the response to the chat using `st.write_stream`, then store it in 
-        # session state.
+        # Display AI response
         with st.chat_message("assistant"):
             response = st.write_stream(stream)
         st.session_state.messages.append({"role": "assistant", "content": response})
