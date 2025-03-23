@@ -1,4 +1,4 @@
-# AceMed AI
+ # AceMed AI
 <div style="display: flex; justify-content: center;">
   <img src="Assets/Images/AceMed AI logo.jpg" width="200" alt="AceMed AI Logo"/>
 </div>
@@ -93,7 +93,6 @@ Join us in **enhancing AI-driven education!** 🚀
 AceMed AI is licensed under the **MIT License**, allowing open collaboration while maintaining proper attribution.
 
 📜 **License:** [MIT License](LICENSE.md)  
-📧 **Contact:** [Your Email / LinkedIn Profile]  
 🌐 **Website (Coming Soon):** [AceMedAI.com]  
 
 ---  
