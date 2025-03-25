@@ -5,7 +5,7 @@
 
 
 
-**Developed by Eesha Tariq**  
+Developed by Eesha Tariq**  
 **Project Name:** AceMed AI – AI-Powered MDCAT Preparation  
 
 ### **Revolutionizing MDCAT Preparation with AI-Driven Precision**
