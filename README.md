@@ -1,20 +1,16 @@
- # AceMed AI
+# AceMed AI
 <div style="display: flex; justify-content: center;">
   <img src="Assets/Images/AceMed AI logo.jpg" width="200" alt="AceMed AI Logo"/>
 </div>
 
 
 
-**Developed by Eesha Tariq**  
+Developed by Eesha Tariq
 **Project Name:** AceMed AI – AI-Powered MDCAT Preparation  
 
 ### **Revolutionizing MDCAT Preparation with AI-Driven Precision**
 
-## **Academic Information**
-**Course:** Software Construction and Development  
-**Institution:** [The Islamia University of Bahawalpur]  
-**Professor:** Dr. Daler  
-**Semester:** 5th Semester  
+App powerred by APTIVA AI
 
 ## **Project Overview**
 AceMed AI is an advanced AI-driven educational platform designed to assist Pakistani students in preparing for the MDCAT exam with **syllabus-aligned accuracy**. Leveraging the power of **Natural Language Processing (NLP) and Machine Learning (ML)**, the system provides real-time assistance, step-by-step physics calculations, adaptive learning, and intelligent MCQ practice. 
