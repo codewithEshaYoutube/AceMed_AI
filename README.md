@@ -89,7 +89,7 @@ Join us in **enhancing AI-driven education!** 🚀
 AceMed AI is licensed under the **MIT License**, allowing open collaboration while maintaining proper attribution.
 
 📜 **License:** [MIT License](LICENSE.md)  
-🌐 **Website (Coming Soon):** [AceMedAI.com]  
+🌐 **Website:** [AceMedAI.com](https://acemed-ai.streamlit.app/) 
 
 ---  
 🚀 **AceMed AI – Redefining MDCAT Preparation with AI Excellence!**
