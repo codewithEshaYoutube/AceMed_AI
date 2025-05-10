@@ -5,7 +5,7 @@ import uuid
 import json
 from datetime import datetime
 
-# API Configuration
+# API Configuration 
 API_KEY = "xKQyEGwC.uCyxokv9TXGkDscfGZxVNrCLiJT7rIkv"
 BASE_URL = "https://payload.vextapp.com/hook/ICYAJ67MIS/catch"
 
@@ -78,12 +78,11 @@ if "last_token" not in st.session_state:
 # Page configuration with improved aesthetics
 st.set_page_config(
     page_title="AceMed AI - MDCAT LMS Dashboard", 
-    page_icon="🩺", 
+    page_icon="Assets/Images/page-logo.png", 
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for improved UI
 st.markdown("""
     <style>
             *{
@@ -241,19 +240,46 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header
-st.markdown('<h1 class="main-header">🩺 AceMed AI - MDCAT LMS Dashboard</h1>', unsafe_allow_html=True)
+st.markdown("""
+    <h1 style="
+        color: white; 
+        text-align: center;
+        font-weight: bold; 
+        font-size: 2.5rem;
+        margin-top: 0;
+    ">
+        Crack the MDCAT — Score Higher with AI Precision.
+    </h1>
+""", unsafe_allow_html=True)
+import streamlit as st
 
-# Sidebar with optimized logo
-st.sidebar.image("Assets/Images/AceMed AI logo.jpg", caption="", width=100, use_column_width=False, output_format="JPEG", clamp=True)
-st.sidebar.markdown('<style>.sidebar-logo {max-width: 100px !important;}</style>', unsafe_allow_html=True)
+import base64
+def get_base64_image(image_path):
+    with open(image_path, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+# Encode your local image
+image_base64 = get_base64_image("Assets/Images/page-logo.png")
+
+# Display logo + text in sidebar (same row)
+st.sidebar.markdown(
+    f"""
+    <div style="display: flex; align-items: center;">
+        <img src="data:image/png;base64,{image_base64}" width="40" style="margin-right: 10px;" />
+        <span style="font-size: 20px; color: white; font-weight: bold;">AceMed AI</span>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Sidebar Navigation
-st.sidebar.header("Dashboard Navigation")
+st.sidebar.header("Dashboard ")
 page = st.sidebar.radio("Select a page", [
     "💬 MDCAT Chatbot", 
     "📚 Study Materials", 
     "📊 Performance Tracker",
-    "⚙️ API Settings"
+
 ])
 
 # Chatbot UI with Enhanced Aesthetics
@@ -472,10 +498,9 @@ elif page == "⚙️ API Settings":
                 </div>
             """, unsafe_allow_html=True)
 
-# Footer Section with improved branding
 st.markdown("""
-    <div class="footer">
-        <p>&copy; 2025 AceMed AI - All rights reserved | <a href="https://www.linkedin.com/company/acemedai/">Follow Us on LinkedIn</a></p>
+    <div class="footer" >
+        <p >&copy; 2025 AceMed AI - All rights reserved | <a href="https://www.linkedin.com/company/acemedai/">Follow Us on LinkedIn</a></p>
         <p>Made with ❤ by Eesha Tariq</p>
     </div>
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True) 
