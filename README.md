@@ -1,95 +1,169 @@
- # AceMed AI
+# AceMed AI 🇵🇰 
 <div style="display: flex; justify-content: center;">
   <img src="Assets/Images/page-logo.png" width="200" alt="AceMed AI Logo"/>
-</div>
+</div> 
+AI-powered MDCAT preparation platform tailored to PTB/Federal board syllabus using LLaMA-based fine-tuned models.
 
+---
 
+## 🖥️ Landing Page
 
-Developed by Eesha Tariq
-**Project Name:** AceMed AI – AI-Powered MDCAT Preparation  
+![Landing Page](/landing_page.jpg)
 
-### **Revolutionizing MDCAT Preparation with AI-Driven Precision**
+### AceMed AI — Pakistan’s AI-Powered MDCAT Preparation Platform
 
-App powerred by APTIVA AI
+**Crack the MDCAT — Score Higher with AI Precision**
 
-## **Project Overview**
-AceMed AI is an advanced AI-driven educational platform designed to assist Pakistani students in preparing for the MDCAT exam with **syllabus-aligned accuracy**. Leveraging the power of **Natural Language Processing (NLP) and Machine Learning (ML)**, the system provides real-time assistance, step-by-step physics calculations, adaptive learning, and intelligent MCQ practice. 
+AceMed AI is trained on exact FSC Federal, PTB, and provincial board books, offering precise, personalized preparation powered by advanced AI.
 
-## **Key Features 🚀**
-✅ **Syllabus-Perfect Precision** – Trained on **PTB and Federal Board books** for 100% syllabus alignment.  
-✅ **Advanced Physics Calculation Engine** – AI-driven step-by-step numerical problem-solving.  
-✅ **Adaptive AI Learning** – Personalized recommendations based on student performance.  
-✅ **Real-Time MCQ Practice Mode** – AI-powered instant knowledge testing with detailed explanations.  
-✅ **Intelligent Progress Tracking** – Monitors learning trends and provides insightful analytics.  
-✅ **Adaptive Difficulty Levels** – Dynamically adjusts question difficulty to optimize learning.  
-✅ **Voice-Enabled Query System (Upcoming Feature)** – Hands-free AI assistance for interactive learning.  
+👉 [Start Free Trial](https://acemed-ai.streamlit.app/)  
+👉 [Learn More](https://acemed-ai.streamlit.app/)
 
-## **Technology Stack 🛠️**
-🔹 **Programming Language:** Python  
-🔹 **Machine Learning Frameworks:** TensorFlow, OpenAI GPT  
-🔹 **Data Storage:** PostgreSQL / MongoDB  
-🔹 **Deployment:** Cloud-based web application (future mobile app integration)  
-🔹 **Frontend (Upcoming):** React.js / Next.js for a seamless UI/UX  
+---
 
-## **Installation & Setup 📥**
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/AceMDCAT-GPT.git
+## 🌐 Navigation
 
-# Navigate to the project directory
-cd AceMDCAT-GPT
+- Home  
+- About Us  
+- Features  
+- Pricing  
+- FAQs  
+- **Login | Register**
 
-# Install dependencies
-pip install -r requirements.txt
-```
+---
 
-## **Usage ▶️**
-```bash
-python main.py
-```
+## 🎯 Key Highlights
 
-## **Development Roadmap 🔄**
-AceMed AI follows an **Agile Development Lifecycle**, ensuring continuous refinement based on user feedback. The development process includes:
+### Why AceMed AI?
 
-### **Phase 1: Research & Requirement Analysis**
-📌 Identifying key pain points for MDCAT students and aligning with **PMC syllabus guidelines**.
+AceMed AI merges technology with education to create a personalized and efficient MDCAT prep experience. It replaces costly coaching centers with smart, adaptive tools, empowering students to:
 
-### **Phase 2: Data Collection & Preprocessing**
-📌 Structuring **PTB/Federal Board textbooks, past papers, and practice MCQs** into structured datasets.  
-📌 Ensuring high-quality, labeled datasets for **accurate AI training**.
+- Learn at their own pace
+- Focus on weak areas
+- Practice with real-time AI feedback
 
-### **Phase 3: AI Model Development**
-📌 Fine-tuning **transformer-based NLP models** for high-precision responses.  
-📌 Integrating a **step-by-step calculation engine for physics & chemistry numericals**.
+**Mission:** To make high-quality MDCAT prep accessible, smart, and personalized through the power of AI.
 
-### **Phase 4: System Development & Integration**
-📌 Building the **backend infrastructure** and chatbot interface.  
-📌 Developing an **interactive student dashboard** for real-time performance tracking.
+---
 
-### **Phase 5: Testing & Deployment**
-📌 Conducting rigorous **unit, integration, and user testing** to ensure accuracy and efficiency.  
-📌 Deploying the **beta version on cloud servers** for real-world testing.
+AceMed AI is Pakistan’s first AI-powered MDCAT preparation assistant, trained on PTB and Federal Board books. It provides:
 
-### **Phase 6: User Feedback & Iteration**
-📌 Collecting feedback from **early adopters (students & educators)** to improve AI accuracy.  
-📌 Implementing feature enhancements based on real-world usage.
+- ✍️ Accurate, syllabus-based answers
+- 📊 Performance analytics dashboard
+- 🤖 Chatbot interface for MDCAT Q&A
+- 📚 Curated MCQ banks
+- 🔍 Step-by-step numerical solvers
+- 🔄 Adaptive learning and feedback loops
 
-## **Contribution Guidelines 🤝**
-AceMed AI is an **open-source project**, welcoming contributions from AI researchers, developers, and educators worldwide. 
+---
 
-🔹 **How to Contribute?**  
-1. **Fork** the repository.  
-2. Create a **feature branch**.  
-3. Implement **improvements or bug fixes**.  
-4. Submit a **pull request** for review.  
+## 🛠️ Technology Stack
 
-Join us in **enhancing AI-driven education!** 🚀
+| Layer          | Tools & Frameworks                            |
+|----------------|------------------------------------------------|
+| **Frontend**   | Streamlit, HTML, TailwindCSS, React.js        |
+| **Backend**    | FastAPI, LangChain, Python, HuggingFace       |
+| **Database**   | MongoDB, Redis                                 |
+| **AI Models**  | LLaMA, LoRA Fine-Tuning, Transformers          |
+| **Infra**      | Google Colab Pro+, GitHub, Vercel              |
 
-## **Open Source & Licensing 🌍**
-AceMed AI is licensed under the **MIT License**, allowing open collaboration while maintaining proper attribution.
+---
 
-📜 **License:** [MIT License](LICENSE.md)  
-🌐 **Website:** [AceMedAI.com](https://acemed-ai.streamlit.app/) 
+## 🔬 AI Model Fine-Tuning
 
----  
-🚀 **AceMed AI – Redefining MDCAT Preparation with AI Excellence!**
+We leverage the **LLaMA model**, fine-tuned using **LoRA (Low-Rank Adaptation)** to adapt the base language model to the **MDCAT domain**. This enables precise, context-aware responses aligned with FSc and PTB syllabi.
+
+👉 [Open Fine-Tuning Notebook in Colab](https://colab.research.google.com/drive/19h9IH47HhXx30C2gfd7Kr6GzJwB6-2-Y)
+
+### 📘 Fine-Tuning Overview
+
+| Component                 | Details                                                                 |
+|--------------------------|-------------------------------------------------------------------------|
+| **Base Model**           | Meta LLaMA (7B)                                                         |
+| **Fine-Tuning Method**   | LoRA (Low-Rank Adaptation)                                              |
+| **Data Used**            | Curated PTB + Federal Board textbook content + MDCAT MCQs              |
+| **Framework**            | 🤗 Hugging Face Transformers + PEFT                                     |
+| **Notebook**             | Google Colab for rapid iteration                                        |
+| **Training Objective**   | SFT (Supervised Fine-Tuning) on syllabus-aligned Q&A                    |
+| **Epochs**               | 3–5 (adaptive based on validation loss)                                 |
+| **Optimization**         | AdamW optimizer, 5e-5 learning rate                                     |
+| **LoRA Ranks**           | r=8, alpha=16                                                           |
+| **Hardware Used**        | Google Colab Pro+ (A100 GPU)                                            |
+
+---
+
+## 🔄 Development Roadmap
+
+AceMed AI follows the **Agile Software Development Life Cycle (SDLC)** for rapid iteration, scalability, and user-focused features.
+
+### 📅 Phases
+
+1. **Research & Requirement Analysis**
+   - Aligning features with PMC syllabus & student feedback  
+   
+2. **Data Collection & Preprocessing**
+   - Structuring PTB/Federal board content and MCQs  
+   - Cleaning & labeling data for model training  
+
+3. **AI Model Development**
+   - Fine-tuning transformer-based models  
+   - Developing step-by-step numerical solvers  
+
+4. **System Development & Integration**
+   - Backend infrastructure + chatbot interface  
+   - Interactive dashboard for performance analytics  
+
+5. **Testing & Deployment**
+   - Unit & integration testing  
+   - Beta deployment for real-world usage  
+
+6. **User Feedback & Iteration**
+   - Feedback from students & educators  
+   - Feature refinement & model accuracy tuning  
+
+---
+
+## 💸 Pricing
+
+| Plan            | Price         | Features                                                                 |
+|-----------------|---------------|---------------------------------------------------------------------------|
+| 🎓 **Free**     | Rs 0/month    | Limited AI question generation, Basic analytics                          |
+| 🥇 **Gold**     | Rs 2500/month | Unlimited AI-generated questions, Detailed performance analytics, Support |
+| 👑 **Platinum** | Rs 5000/month | All Gold features, 1-on-1 mentoring, Exclusive MCQ banks                 |
+
+---
+
+## ❓ FAQs
+
+**Q: How is AceMed AI different from ChatGPT?**  
+A: It's trained specifically on MDCAT syllabus (Federal/PTB), ensuring relevant, accurate answers.
+
+**Q: Can AceMed AI improve my marks?**  
+A: Yes, through adaptive learning and targeted practice.
+
+**Q: Is past paper practice included?**  
+A: Yes, along with textbook references and explanations.
+
+**Q: How accurate are the answers?**  
+A: 95%+ based on internal testing. Manual reviews ongoing for edge cases.
+
+---
+
+## 🤝 Contribution Guidelines
+
+AceMed AI is open-source and welcomes contributions:
+
+1. Fork the repository  
+2. Create a feature branch  
+3. Commit your changes  
+4. Open a pull request  
+
+---
+
+## 📜 License & Links
+
+- **License**: MIT License  
+- **Website**: [AceMedAI.com](https://acemedai.com)  
+- **Contact**: support@acemed.ai |  
+
+---
